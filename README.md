@@ -23,9 +23,6 @@ This readme file describes all the steps needed to prepare your own object detec
 
 This repository contains all the files you need to train the model to identify cigarettes and their variants. In this tutorial, I also explained where you need to change the detector you need. After all, you can learn how to test a trained model with an mp4 file or your camera. (All codes are available.)
 
-<p align="center">
-  <img src="doc/detector1.jpg">
-</p>
 
 ## Introduction
 The purpose of this tutorial is to explain how to train your own convolutional neural network object detection classifier for an object starting from scratch.
@@ -176,9 +173,7 @@ To ensure compatibility with the chosen version of Tensorflow (i.e.  `1.14.0`), 
 #### 2b. Download the Faster-RCNN-Inception-V2-COCO model from TensorFlow's model zoo
 TensorFlow offers several object detection models (specific neural network architectures and pre-trained classifiers) in the model zoo. Some models (such as the SSD-MobileNet model) have an architecture that allows for faster detection but with less accuracy, while some models (such as the Faster-RCNN model) provide slower detection but more accuracy. Since the object we consider in this training is cigarettes, we need to process it in a much more detailed and small area. Searching for a small cigarette in all input is a really difficult and long process. For this reason, we should search only in regions where the object we are looking for is likely to exist. Algorithms such as SSD or YOLO search all input and with one step, while the Faster R-CNN algorithm makes predictions about the areas where the object is likely to be in the input and includes only these prediction fields in the neural network. This feature will enable us to detect cigarettes with higher consistency and consume less resources. I seem to hear your voice, "So what's the downside of Faster R-CNN?" They work remarkably slow because CNN networks operate in 2 stages, . (The frame rate we obtained in training is 14 fps.)
 
-<p align="center">
-  <img src="doc/rcnn_vs_ssd.jpg">
-</p>
+
 
 This tutorial will use the Faster-RCNN-Inception-V2 model. [Download the model here.](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz) 
 
