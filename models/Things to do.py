@@ -1,0 +1,1 @@
+You should download the "master-model" folder from "https://github.com/tensorflow/models/tree/r1.4.0" to this folder.
