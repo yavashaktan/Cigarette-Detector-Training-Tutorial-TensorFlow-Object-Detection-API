@@ -59,7 +59,7 @@ Visit [TensorFlow's website](https://www.tensorflow.org/install) for further ins
     > -   `<INSTALL_PATH>\NVIDIA  GPU  Computing  Toolkit\CUDA\v10.0\extras\CUPTI\libx64`
     > -   `<INSTALL_PATH>\NVIDIA  GPU  Computing  Toolkit\CUDA\v10.0\cuda\bin`This portion of the tutorial goes over the full set up required. It is fairly meticulous, but follow the instructions closely, because improper setup can cause unwieldy errors down the road.
     
-#### Update your GPU drivers (Optional)[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#update-your-gpu-drivers-optional "Permalink to this headline")
+#### Update your GPU drivers (Optional)
 
 If during the installation of the CUDA Toolkit (see  [Install CUDA Toolkit](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#cuda-install)) you selected the  Express Installation  option, then your GPU drivers will have been overwritten by those that come bundled with the CUDA toolkit. These drivers are typically NOT the latest drivers and, thus, you may wish to updte your drivers.
 
@@ -67,7 +67,7 @@ If during the installation of the CUDA Toolkit (see  [Install CUDA Toolkit](http
 -   Select your GPU version to download
 -   Install the driver for your chosen OS
 
-#### Create a new Conda virtual environment[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#create-a-new-conda-virtual-environment "Permalink to this headline")
+#### Create a new Conda virtual environment
 -   Open a new  Terminal  window  
 -   Type the following command:    
     > conda create -n tfgpu pip python=3.7    
@@ -79,7 +79,7 @@ Once you have activated your virtual environment, the name of the environment sh
 
 (tfgpu) C:\Users\haktan>
 
-#### Install TensorFlow GPU for Python[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#install-tensorflow-gpu-for-python "Permalink to this headline")
+#### Install TensorFlow GPU for Python
 
 -   Open a new  Terminal  window and activate the  tfgpu environment.
     
@@ -89,7 +89,7 @@ Once you have activated your virtual environment, the name of the environment sh
     
 -   Wait for the installation to finish  
  
-#### Test your Installation[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#id9 "Permalink to this headline")
+#### Test your Installation
 -   Open a new  Terminal  window and activate the  tfgpu environment (if you have not done so already)    
 -   Start a new Python interpreter session by running:    
     > python    
@@ -123,10 +123,10 @@ Once you have activated your virtual environment, the name of the environment sh
     > b'Hello, TensorFlow!'
     
 
-## TensorFlow Models Installation[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#tensorflow-models-installation "Permalink to this headline")
+## TensorFlow Models Installation
 
 
-### Install Prerequisites[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#install-prerequisites "Permalink to this headline")
+### Install Prerequisites
 
 Building on the assumption that you have just created your new virtual environment (whether that’s  tensorflow_cpu,  tensorflow_gpu  or whatever other name you might have used), there are some packages which need to be installed before installing the models.
 
@@ -152,7 +152,7 @@ The packages can be installed using  `conda`  by running:
 >conda install cython
 
 
-### Downloading the TensorFlow Models[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#downloading-the-tensorflow-models "Permalink to this headline")
+### Downloading the TensorFlow Models
 
 Note
 
@@ -198,8 +198,7 @@ If you want to train your own object detector, delete the following files (do no
 
 Now, you are ready to start from scratch in training your own object detector. This tutorial will assume that all the files listed above were deleted, and will go on to explain how to generate the files for your own training dataset.
 
-### Protobuf Installation/Compilation[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#protobuf-installation-compilation "Permalink to this headline")
-
+### Protobuf Installation/Compilation
 The Tensorflow Object Detection API uses Protobufs to configure model and training parameters. Before the framework can be used, the Protobuf libraries must be downloaded and compiled.
 
 This should be done as follows:
@@ -220,7 +219,7 @@ This should be done as follows:
     > protoc object_detection/protos/*.proto --python_out=.
 
 
-### Adding necessary Environment Variables[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#adding-necessary-environment-variables "Permalink to this headline")
+### Adding necessary Environment Variables
 
 1.  Install the  `Tensorflow\models\research\object_detection`  package by running the following from  `Tensorflow\models\research`:    
     > //From within TensorFlow/models/research/
@@ -236,7 +235,7 @@ Windows
 -   Then click “OK” to save the changes:    
 where, in both cases,  `<PATH_TO_TF>`  replaces the absolute path to your  `TesnorFlow`  folder. (e.g.  `<PATH_TO_TF>`  =  `C:\Users\haktan\Documents`  if  `TensorFlow`  resides within your  `Documents`  folder)
 
-### Test your Installation[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#test-tf-models "Permalink to this headline")
+### Test your Installation
 -   Open a new  Terminal  window and activate the  tensorflow_gpu  environment (if you have not done so already)    
 -   `cd`  into  `TensorFlow\models\research\object_detection`  and run the following command:    
     > // From within TensorFlow/models/research/object_detection
@@ -248,11 +247,11 @@ where, in both cases,  `<PATH_TO_TF>`  replaces the absolute path to your  `Tesn
 ### 3. Gather and Label Pictures
 Now that the TensorFlow Object Detection API is all set up and ready to go, we need to provide the images it will use to train a new detection classifier.
 
-## LabelImg Installation[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#labelimg-installation "Permalink to this headline")
+## LabelImg Installation
 
 There exist several ways to install  `labelImg`. 
 
-### Get from PyPI[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#get-from-pypi-recommended "Permalink to this headline")
+### Get from PyPI
 
 1.  Open a new  Terminal  window and activate the  tensorflow_gpu  environment (if you have not done so already)
 2.  Run the following command to install  `labelImg`:
@@ -263,7 +262,7 @@ pip install labelImg
 
 labelImg
 
-## Annotating images[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#annotating-images "Permalink to this headline")
+## Annotating images
 
 To annotate images we will be using the  [labelImg](https://github.com/tzutalin/labelImg)  package. If you haven’t installed the package yet, then have a look at  [LabelImg Installation](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#labelimg-install).
 -   Once you have collected all the images to be used to test your model (ideally more than 100 per class), place them inside the folder  `training_demo\images`.    
@@ -280,7 +279,7 @@ Once open, you should see a window similar to the one below:
 ResimResimResimResimResimResimResimResimResimResim
 
 
-## Creating Label Map[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#creating-label-map "Permalink to this headline")
+## Creating Label Map
 
 TensorFlow requires a label map, which namely maps each of the used labels to an integer values. This label map is used both by the training and detection processes.
 
@@ -295,7 +294,7 @@ Below I show an example label map (e.g  `label_map.pbtxt`), assuming that our da
 Label map files have the extention  `.pbtxt`  and should be placed inside the  `training_demo\annotations`  folder.
 
 
-## Creating TensorFlow Records[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#creating-tensorflow-records "Permalink to this headline")
+## Creating TensorFlow Records
 
 Now that we have generated our annotations and split our dataset into the desired training and testing subsets, it is time to convert our annotations into the so called  `TFRecord`  format.
 
@@ -319,7 +318,7 @@ Before we proceed to describe the above steps, let’s create a directory where 
     └─ workspace
         └─ training_demo
 
-### Converting  `*.xml`  to  `*.csv`[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#converting-xml-to-csv "Permalink to this headline")
+### Converting  `*.xml`  to  `*.csv`
 
 To do this we can write a simple script that iterates through all  `*.xml`  files in the  `training_demo\images\train`  and  `training_demo\images\test`  folders, and generates a  `*.csv`  for each of the two.
 
@@ -348,7 +347,7 @@ kodEKLEkodEKLEkodEKLEkodEKLEkodEKLEkodEKLEkodEKLEkodEKLE
 
 Once the above is done, there should be 2 new files under the  `training_demo\annotations`  folder, named  `test_labels.csv`  and  `train_labels.csv`, respectively.
 
-### Converting from  `*.csv`  to  `*.record`[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#converting-from-csv-to-record "Permalink to this headline")
+### Converting from  `*.csv`  to  `*.record`
 ---
 -   Create a new file with name  `generate_tfrecord.py`  under  `TensorFlow\scripts\preprocessing`, open it, paste the above code inside it and save.
     
@@ -370,7 +369,7 @@ Once the above is done, there should be 2 new files under the  `training_demo\an
 
 Once the above is done, there should be 2 new files under the  `training_demo\annotations`  folder, named  `test.record`  and  `train.record`, respectively.
 
-## Configuring a Training Pipeline[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#configuring-a-training-pipeline "Permalink to this headline")
+## Configuring a Training Pipeline
 
 For the purposes of this tutorial we will not be creating a training job from the scratch, but rather we will go through how to reuse one of the pre-trained models provided by TensorFlow. If you would like to train an entirely new model, you can have a look at  [TensorFlow’s tutorial](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md).
 
@@ -382,7 +381,7 @@ Apart from the configuration file, we also need to download the latest pre-train
 
 Once the  `*.tar.gz`  file has been downloaded, open it using a decompression program of your choice (e.g. 7zip, WinZIP, etc.). Next, open the folder that you see when the compressed folder is opened (typically it will have the same name as the compressed folded, without the  `*.tar.gz`  extension), and extract it’s contents inside the folder  `training_demo\pre-trained-model`.
 
-## Training the Model[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#training-the-model "Permalink to this headline")
+## Training the Model
 
 Before we begin training our model, let’s go and copy the  `TensorFlow/models/research/object_detection/legacy/train.py`  script and paste it straight into our  `training_demo`  folder. We will need this script in order to train our model.
 
@@ -425,7 +424,7 @@ Once the training process has been initiated, you should see a series of print o
 If you ARE observing a similar output to the above, then CONGRATULATIONS, you have successfully started your first training job. Following what people have said online, it seems that it is advisable to allow you model to reach a  `TotalLoss`  of at least 0.0500 (ideally 0.0100  and lower) if you want to achieve “fair” detection results. Obviously, lower  `TotalLoss`  is better, however very low  `TotalLoss`  should be avoided, as the model may end up overfitting the dataset, meaning that it will perform poorly when applied to images outside the dataset.
 
 
-## Exporting a Trained Inference Graph[](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#exporting-a-trained-inference-graph "Permalink to this headline")
+## Exporting a Trained Inference Graph
 
 Once your training job is complete, you need to extract the newly trained inference graph, which will be later used to perform the object detection. This can be done as follows:
 -   Open a new  Anaconda/Command Prompt    
