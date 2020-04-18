@@ -182,9 +182,6 @@ Download the full repository located on this page (scroll to the top and click C
 
 At this point, here is what your \object_detection folder should look like:
 
-<p align="center">
-  <img src="doc/object_detection_directory.jpg">
-</p>
 
 This repository contains the images, annotation data, .csv files, and TFRecords needed to train a "Cigarette Detector". You can use these images and data to practice making your own Cigarette Detector. It also contains Python scripts that are used to generate the training data. It has scripts to test out the object detection classifier on images, videos, or a webcam feed. You can ignore the \doc folder and its files; they are just there to hold the images used for this readme.
 
@@ -400,28 +397,28 @@ Once the training process has been initiated, you should see a series of print o
     INFO:tensorflow:depth of additional conv before box predictor: 0
     INFO:tensorflow:depth of additional conv before box predictor: 0
     INFO:tensorflow:depth of additional conv before box predictor: 0
-    INFO:tensorflow:Restoring parameters from ssd_inception_v2_coco_2017_11_17/model.ckpt
+    INFO:tensorflow:Restoring parameters from faster_rcnn_inception_v2_coco/model.ckpt
     INFO:tensorflow:Running local_init_op.
     INFO:tensorflow:Done running local_init_op.
     INFO:tensorflow:Starting Session.
     INFO:tensorflow:Saving checkpoint to path training\model.ckpt
     INFO:tensorflow:Starting Queues.
     INFO:tensorflow:global_step/sec: 0
-    INFO:tensorflow:global step 1: loss = 13.8886 (12.339 sec/step)
-    INFO:tensorflow:global step 2: loss = 16.2202 (0.937 sec/step)
-    INFO:tensorflow:global step 3: loss = 13.7876 (0.904 sec/step)
-    INFO:tensorflow:global step 4: loss = 12.9230 (0.894 sec/step)
-    INFO:tensorflow:global step 5: loss = 12.7497 (0.922 sec/step)
-    INFO:tensorflow:global step 6: loss = 11.7563 (0.936 sec/step)
-    INFO:tensorflow:global step 7: loss = 11.7245 (0.910 sec/step)
-    INFO:tensorflow:global step 8: loss = 10.7993 (0.916 sec/step)
-    INFO:tensorflow:global step 9: loss = 9.1277 (0.890 sec/step)
-    INFO:tensorflow:global step 10: loss = 9.3972 (0.919 sec/step)
-    INFO:tensorflow:global step 11: loss = 9.9487 (0.897 sec/step)
-    INFO:tensorflow:global step 12: loss = 8.7954 (0.884 sec/step)
-    INFO:tensorflow:global step 13: loss = 7.4329 (0.906 sec/step)
-    INFO:tensorflow:global step 14: loss = 7.8270 (0.897 sec/step)
-    INFO:tensorflow:global step 15: loss = 6.4877 (0.894 sec/step)
+    INFO:tensorflow:global step 1: loss = 1.3456 (12.339 sec/step)
+    INFO:tensorflow:global step 2: loss = 1.0432 (0.937 sec/step)
+    INFO:tensorflow:global step 3: loss = 0.9786 (0.904 sec/step)
+    INFO:tensorflow:global step 4: loss = 0.8754 (0.894 sec/step)
+    INFO:tensorflow:global step 5: loss = 0.7497 (0.922 sec/step)
+    INFO:tensorflow:global step 6: loss = 0.7563 (0.936 sec/step)
+    INFO:tensorflow:global step 7: loss = 0.7245 (0.910 sec/step)
+    INFO:tensorflow:global step 8: loss = 0.7993 (0.916 sec/step)
+    INFO:tensorflow:global step 9: loss = 0.1277 (0.890 sec/step)
+    INFO:tensorflow:global step 10: loss = 0.3972 (0.919 sec/step)
+    INFO:tensorflow:global step 11: loss = 0.9487 (0.897 sec/step)
+    INFO:tensorflow:global step 12: loss = 0.7954 (0.884 sec/step)
+    INFO:tensorflow:global step 13: loss = 0.4329 (0.906 sec/step)
+    INFO:tensorflow:global step 14: loss = 0.8270 (0.897 sec/step)
+    INFO:tensorflow:global step 15: loss = 0.4877 (0.894 sec/step)
     ...
 
 If you ARE observing a similar output to the above, then CONGRATULATIONS, you have successfully started your first training job. Following what people have said online, it seems that it is advisable to allow you model to reach a  `TotalLoss`  of at least 0.0500 (ideally 0.0100  and lower) if you want to achieve “fair” detection results. Obviously, lower  `TotalLoss`  is better, however very low  `TotalLoss`  should be avoided, as the model may end up overfitting the dataset, meaning that it will perform poorly when applied to images outside the dataset.
