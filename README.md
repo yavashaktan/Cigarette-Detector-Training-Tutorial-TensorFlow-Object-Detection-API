@@ -20,7 +20,7 @@ This readme file describes all the steps needed to prepare your own object detec
 5. [Creating a label map and making training settings]
 6. [Training]
 7. [Exporting the inference graph]
-8. [using your newly trained object detection classifier with mp4 file and webcam][Appendix: Common Errors]
+8. [Using your newly trained object detection classifier with mp4 file and webcam]
 
 This repository contains all the files you need to train the model to identify cigarettes and their variants. In this tutorial, I also explained where you need to change the detector you need. After all, you can learn how to test a trained model with an mp4 file or your camera. (All codes are available.)
 
