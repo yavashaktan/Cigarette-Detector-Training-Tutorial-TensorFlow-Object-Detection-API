@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>sigara (226).png</filename>
+	<path>C:\Users\yapayZeka\Documents\TensorFlow\workspace\training_demo\images\train\sigara (226).png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>sigara</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>413</xmin>
+			<ymin>250</ymin>
+			<xmax>473</xmax>
+			<ymax>272</ymax>
+		</bndbox>
+	</object>
+</annotation>
