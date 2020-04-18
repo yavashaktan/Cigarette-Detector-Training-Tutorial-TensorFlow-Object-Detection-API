@@ -7,7 +7,8 @@ This repository tells how to train a Tensorflow model using the Faster R-cnn alg
 
 **I also prepared a video showing how the completed model works in real time.**
 
-[![](https://raw.githubusercontent.com/yavashaktan/Cigarette-Detector-Training-Tutorial-TensorFlow-Object-Detection-API/master/readme.md%20files/video.png?token=AMFEBNM4XQ5WLPWK4UA5NPC6TN2HM)](https://www.youtube.com/watch?v=Vz-mCZyb2Q0)
+[![My Youtube Video Link](https://github.com/yavashaktan/Cigarette-Detector-Training-Tutorial-TensorFlow-Object-Detection-API/blob/master/readme.md%20files/video.png)](https://www.youtube.com/watch?v=Vz-mCZyb2Q0)
+
 
 
 This readme file describes all the steps needed to prepare your own object detector:
