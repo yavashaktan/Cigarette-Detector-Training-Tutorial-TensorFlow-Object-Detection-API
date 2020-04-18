@@ -5,7 +5,12 @@
 
 This repository tells how to train a Tensorflow model using the Faster R-cnn algorithm for Anaconda virtual environment on windows 10 operating system. There are also photographs that you will use for training in the warehouse and the codes to export the Inference Graph of the completed training model. This model has been prepared to detect cigarettes and its derivatives, but can be reused for different objects with minor changes in the training data and trained model settings.
 
-**I also prepared a video showing how the completed model works in real time.**
+## So long and thanks for all the fish
+I used great resources while preparing this whole project and this readme document. Here are the champions.
+-   https://readthedocs.org/projects/tensorflow-object-detection-api-tutorial/
+-   https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10
+
+### I also prepared a video showing how the completed model works in real time.
 
 [![My Youtube Video Link](https://github.com/yavashaktan/Cigarette-Detector-Training-Tutorial-TensorFlow-Object-Detection-API/blob/master/readme.md%20files/video.png)](https://www.youtube.com/watch?v=Vz-mCZyb2Q0)
 
