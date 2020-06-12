@@ -3,6 +3,7 @@
 
 ## Brief Summary
 
+This project has been prepared as a graduation thesis of Pamukkale University Management Information Systems undergraduate department.
 This repository tells how to train a Tensorflow model using the Faster R-cnn algorithm for Anaconda virtual environment on windows 10 operating system. There are also photographs that you will use for training in the warehouse and the codes to export the Inference Graph of the completed training model. This model has been prepared to detect cigarettes and its derivatives, but can be reused for different objects with minor changes in the training data and trained model settings.
 
 ## So long and thanks for all the fish
